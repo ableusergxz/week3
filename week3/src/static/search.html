@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <style>
+        .qx {
+            display: inline-block;
+            width: 15%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        
+        .wrap .header1 {
+            width: 100%;
+            height: 60px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .section h3 {
+            display: inline-block;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 10px;
+            box-sizing: border-box;
+        }
+        
+        .section .search {
+            width: 100%;
+            height: 100px;
+            margin-top: 15px;
+        }
+        
+        .section .search img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header header1">
+            <span>
+                <input type="text" placeholder="小米MIX 2S">
+            </span>
+            <span class="qx">取消</span>
+        </header>
+        <section class="section">
+            <h3>热门搜索</h3>
+            <div class="search">
+                <img src="../static/img/sousuo.png" alt="">
+            </div>
+        </section>
+    </div>
+</body>
+<script src="../static/js/lib/jquery-1.10.1.min.js"></script>
+<script>
+    $(".qx").click(function() {
+        $(location).prop('href', '../static/index.html')
+    })
+</script>
+
+</html>
